@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="!">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Expiry Products | New Reliable Medical Store</title>
+</head>
+
+<body>
+    <h1 class="text-center">New Reliable Medical Store</h1>
+    <h4 class="text-center">Expiry Products Sorter</h4>
+    <div class="container" id="form-box">
+        <form action="/send" method='POST'>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="pname" name="pname" type="text" placeholder="Product Name"
+                            aria-label="default input example">
+                        <label for="pname">Product Name</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="bno" name="bno" type="text" placeholder="Batch No."
+                            aria-label="default input example">
+                            <label for="bno">Batch No.</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="edt" name="edt" type="date" placeholder="Expiry date" aria-label="default input example">
+                        <label for="edt">Expiry Date</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="qty" name="qty" type="number" placeholder="Qty" aria-label="default input example">
+                        <label for="qty">Qty</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="pkg" name="pkg" type="text" placeholder="Pkg" aria-label="default input example">
+                        <label for="pkg">Pkg</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input class="form-control" required id="mrp" name="mrp" type="number" placeholder="MRP" aria-label="default input example">
+                        <label for="mrp">MRP</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <input class="form-control" required id="pr" name="pr" type="text" placeholder="Purchase Reference" aria-label="default input example">
+                        <label for="pr">Purchase Reference</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="dname" name="dname" required aria-label="Default select example">
+                            <option value="GPD">Galaxystar Pharma Distributors Pvt Ltd</option>
+                            <option value="SKP">Skites Pharma Pvt Ltd</option>
+                            <option value="BSP">B S pharma</option>
+                            <option value="ABP">A B pharma</option>
+                            <option value="EAH">Eastern agencies healthcare pvt ltd</option>
+                            <option value="KPH">Kay pharma </option>
+                            <option value="CPD">City pharma distributors </option>
+                            <option value="SPP">S parikh pharma Pvt Ltd </option>
+                            <option value="JKD">J.k distributors </option>
+                            <option value="ABR">Amritlal and brothers</option>
+                            <option value="PHD">Pharmadeal</option>
+                            <option value="CDD">Chirag drug distributors</option>
+                            <option value="KKP">K K pharma </option>
+                            <option value="SMC">Santacruz medical center</option>
+                        </select>
+                        <label for="dname">Distributor Name</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-12">
+                    <div class="text-center">
+                        <button class="btn btn-outline-primary" id="sbtn" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+<!-- Product Name	Batch No. Distributor	Expiry Date	Qty	Pkg	MRP Purchase Reference -->
